@@ -1,0 +1,97 @@
+body,div{
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(129, 126, 126);
+}
+
+.mainheader{
+  width: 100%;
+  min-width: 900px;
+}
+
+.banner{
+  min-width: 900px;
+  text-align: center;
+  width: 100%;
+  background: rgb(177, 174, 174);
+
+}
+.mario{
+  float: left;
+}
+.fortnite{
+  float: right;
+}
+nav{
+  width: 100%;
+  border-bottom: 3px solid rgb(44, 27, 27);
+  background: rgb(40, 59, 56);
+  text-align: center;
+}
+nav ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+nav ul li{
+  
+  
+  padding: 40px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+nav ul li:hover{
+  background: rgb(129, 129, 206);
+}
+
+.left{
+  float: left;
+  width: 60%;
+  clear: left;
+}
+.right{
+  clear: right;
+  float: right;
+  width: 38%;
+}
+.divhead{
+  background: rgb(139, 56, 56);
+  color: white;
+  height: 100%;
+  padding: 6px;
+}
+
+.search{
+  background: rgb(231, 229, 229);
+  height: 30px;
+  border-radius: 10px;
+  border: 3px solid rgb(223, 92, 92);
+}
+.search:focus{
+  border: 3px solid rgb(88, 165, 88);
+}
+.latestgames{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: white;
+}
+.latestgimg{
+  padding: 0;
+  margin: 0;
+}
+
+.active{
+  background: rgba(255, 0, 0, 0.397);
+}
