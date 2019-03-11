@@ -4,6 +4,7 @@ import PomodoroClock from './projects/pomodoro'
 import Calculator from './projects/calculator'
 import DrumMachine606 from './projects/drum606'
 import RandomQuoteMachine from './projects/randomQuoteMachine'
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 
 class Temporary extends Component {
 
@@ -28,6 +29,20 @@ class Temporary extends Component {
     return (
       <main>
         <header id="home-dsk" className="header-container">
+          <Navbar className="mainNav" bg="pink" expand="lg">
+            <Navbar.Brand href="#home">>></Navbar.Brand>
+            <Navbar.Toggle className="navBTN" aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link className="txtNav" href="#home-dsk">Home</Nav.Link>
+                <Nav.Link className="txtNav" href="#portfolio">Portfolio</Nav.Link>
+                <Nav.Link className="txtNav" href="#about">About</Nav.Link>
+                <Nav.Link className="txtNav" href="#contact">Contact</Nav.Link>
+
+              </Nav>
+
+            </Navbar.Collapse>
+          </Navbar>
           <div className="nav-container">
 
             <nav className="navbar">
