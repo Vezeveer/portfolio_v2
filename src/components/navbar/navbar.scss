@@ -1,0 +1,58 @@
+.nav-desktop{
+  z-index: 50;
+  position: absolute;
+}
+.txtNav{
+  color: white !important;
+  text-align: center;
+}
+.txtNav:hover{
+  background: rgba(39, 4, 4, 0.664);
+}
+.mainNav{
+  background: rgba(99, 20, 20, 0.274) !important;
+  color: white !important;
+  z-index: 49;
+  display: none !important;
+  position: fixed !important;
+  width: 100%;
+}
+.nav-container{
+  width: 100vw;
+  position: absolute;
+  z-index: 6;
+  text-align: right;
+  height: 80px;
+}
+.navlinks{
+  float: right;
+  margin-right: 20px;
+}
+.navlinks a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.705);
+  padding: 20px;
+}
+.navlinks a:hover{
+  color: white;
+}
+.nav-container{
+  width: 100vw;
+  position: absolute;
+  z-index: 6;
+  text-align: right;
+  height: 80px;
+}
+
+@media only screen and (max-width: 720px){
+  .navlinks{
+      display: none !important;
+  }
+  .menu-container{
+      display: block;
+  }
+  .mainNav{
+    display: block !important;
+  }
+
+}
