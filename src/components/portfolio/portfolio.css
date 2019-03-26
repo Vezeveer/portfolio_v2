@@ -1,5 +1,6 @@
-#portfolio {
-  text-align: center;
-  line-height: 100px;
+.portfolioContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=portfolio.css.map */

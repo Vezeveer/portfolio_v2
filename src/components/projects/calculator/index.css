@@ -3,8 +3,6 @@
 #calculator{
   width: 400px;
   margin: 0 auto;
-  
-  margin-top: 10%;
 }
 #screen, #info, #displayCalc{
   font-family: san-serif;
@@ -28,4 +26,17 @@
 }
 .plus{
   height: 100%;
+}
+.calculatorContainer{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+  background: linear-gradient(rgba(3, 52, 65, 0.753) , rgba(43, 29, 24, 0.795)); 
+}
+.calcExitBtn{
+  
 }

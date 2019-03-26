@@ -15,10 +15,10 @@ const Footer = (params) => {
 
         </div>
         <div id="social">
-          <a href="https://github.com/Vezeveer" target="_blank"><img className="fill-svg" width="24px"
-            src="imgs/github-brands.svg" /></a>
-          <a href="https://stackoverflow.com/story/emmanuelpitcher" target="_blank"><img className="fill-svg" width="24px"
-            src="imgs/stack-overflow-brands.svg" /></a>
+          <a href="https://github.com/Vezeveer" target="_blank" rel="noopener noreferrer"><img className="fill-svg" width="24px"
+            src="imgs/github-brands.svg" alt="" /></a>
+          <a href="https://stackoverflow.com/story/emmanuelpitcher" target="_blank" rel="noopener noreferrer"><img className="fill-svg" width="24px"
+            src="imgs/stack-overflow-brands.svg" alt="" /></a>
         </div>
         <br />
         <p>

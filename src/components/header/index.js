@@ -8,13 +8,13 @@ const Home = () => {
       <header id="home-dsk" className="header-container">
         <NavbarMain />
 
-        <img className="gradient" src="./imgs/gradient-sunny.svg" />
-        <img className="left-part" src="./imgs/left-part.jpg" />
-        <img className="right-part" src="./imgs/right-part.jpg" />
-        <div className="logo-position d-flex justify-content-center align-items-center">
-          <div className="logo-container">
+        <img className="gradient" src="./imgs/gradient-sunny.svg" alt="" />
+        <img className="left-part" src="./imgs/left-part.jpg" alt="" />
+        <img className="right-part" src="./imgs/right-part.jpg" alt="" />
+        <div className="logo-lvl-1">
+          <div className="logo-lvl-2">
             <h4>Hi, I'm</h4>
-            <img className="ep-logo" src="./imgs/ep_logo.svg" />
+            <img className="ep-logo" src="./imgs/ep_logo.svg" alt="logo" />
             <h4>And I am A Web Developer</h4>
           </div>
         </div>

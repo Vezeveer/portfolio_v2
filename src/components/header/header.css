@@ -32,12 +32,23 @@
   z-index: 11;
 }
 
-.logo-container {
-  width: 300px;
+.logo-lvl-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
   z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.logo-container h4 {
+.logo-lvl-1 .logo-lvl-2 h4 {
   text-align: left;
   color: rgba(255, 255, 255, 0.336);
   padding: 0;
@@ -45,7 +56,7 @@
   font-size: 1em;
 }
 
-.logo-container h4:nth-child(3) {
+.logo-lvl-1 .logo-lvl-2 h4:nth-child(3) {
   text-align: right;
 }
 

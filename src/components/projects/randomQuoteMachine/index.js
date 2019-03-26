@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css'
+import { Link } from 'react-router-dom'
 
 class RandomQuoteMachine extends Component {
   state = {
@@ -38,16 +39,22 @@ class RandomQuoteMachine extends Component {
   }
   render() {
     return (
-      <div className="quote-container d-flex justify-content-center align-items-center">
-        <div id="quote-box" className={"col-md-8 card bg-" + this.state.currentColor}>
+      <div className="randQuoContainer">
+        <div id="quote-box" className={"col-md-6 card bg-" + this.state.currentColor}>
           <div className="card-body text-center">
             <p id="text" className="blockquote card-text text-quote"><span id="span-qt">"</span>{this.state.quote}
             </p>
             <p id="author" className="text-right card-subtitle">- {this.state.author}</p>
-            <a className="btn" href="twitter.com/intent/tweet" id="tweet-quote">tweet this!</a>
-            <button id="new-quote" onClick={this.handleClick} className="btn btn-primary">Next Quote</button>
           </div>
+          <p className="btnRQM text-center mt-3 pb-4">
+            <button id="new-quote" onClick={this.handleClick} className="btn btn-primary">Next Quote</button>
+            <br />
+            <br />
+            <Link to="/"><button className="btn btn-danger">EXIT</button></Link>
+          </p>
         </div>
+
+
       </div>
     )
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import './navbar.css'
 
 function NavbarMain() {
@@ -18,15 +18,7 @@ function NavbarMain() {
         </Navbar.Collapse>
       </Navbar>
 
-      <div className="container nav-desktop">
-        <nav className="mt-5 navlinks">
-          <a></a>
-          <a className="active" href="#home-dsk">HOME</a>
-          <a href="#portfolio">PORTFOLIO</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
-        </nav>
-      </div>
+
     </div>
   )
 }

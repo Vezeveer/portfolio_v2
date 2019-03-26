@@ -28,22 +28,27 @@
   height: 100vh;
   z-index:11;
 }
-.logo-container{
-  width: 300px;
+.logo-lvl-1{
+  position: relative;
+  width: 100%;
+  height: 100%;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo-lvl-2{
+    h4{
+      text-align: left;
+      color: rgba(255, 255, 255, 0.336);
+      padding: 0;
+      margin: 0;
+      font-size: 1em;
+    }
+    h4:nth-child(3){
+      text-align: right;
+    }
+  }
 }
-
-.logo-container h4{
-  text-align: left;
-  color: rgba(255, 255, 255, 0.336);
-  padding: 0;
-  margin: 0;
-  font-size: 1em;
-}
-.logo-container h4:nth-child(3){
-  text-align: right;
-}
-
 
 .illumin-lines{
   position: absolute;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './index.css'
+import { Link } from 'react-router-dom'
 
 class PomodoroClock extends Component {
 
@@ -126,52 +127,55 @@ class PomodoroClock extends Component {
     const session = this.state.session / 60
 
     return (
-      <div id="pomodoro">
-        <div className="col-12 text-center pt-4">
-          <h1>
-            Pomodoro Clock
+      <div className="pomodoroContainer">
+        <div className="pomodoroBGBlur"></div>
+        <div className="pomodoro">
+          <div className="col-12 text-center pt-4">
+            <h1>
+              Pomodoro Clock
             </h1>
-          <audio id="beep" src="./media/analog-watch-alarm_daniel-simion.mp3"></audio>
-        </div>
-        <div className="row text-center">
-          <div className="col-6">
-            <h4 id="break-label">
-              Break Length</h4>
-            <div className="row m-0">
-              <button onClick={this.handleBreakDecrement} id="break-decrement" className="col-5">
-                down</button>
-              <h4 id="break-length" className="col-2">
-                {funtime}
-              </h4>
-              <button onClick={this.handleBreakIncrement} id="break-increment" className="col-5">
-                up</button>
+            <audio id="beep" src="./media/analog-watch-alarm_daniel-simion.mp3"></audio>
+          </div>
+          <div className="row text-center">
+            <div className="col-6">
+              <h4 id="break-label">
+                Break Length</h4>
+              <div className="row m-0 d-flex justify-content-center">
+                <button onClick={this.handleBreakDecrement} id="break-decrement" className="pBtn">
+                  V</button>
+                <h4 id="break-length" className="col-3 pInner">
+                  {funtime}
+                </h4>
+                <button style={{ 'transform': 'rotate(180deg)' }} onClick={this.handleBreakIncrement} id="break-increment" className="pBtn">
+                  V</button>
+              </div>
+            </div>
+            <div className="col-6">
+              <h4 id="session-label">
+                Session Length</h4>
+              <div className="row m-0 d-flex justify-content-center">
+                <button onClick={this.handleSessionDecrement} id="session-decrement" className="pBtn">
+                  V</button>
+                <h4 id="session-length" className="col-3 pInner">
+                  {session}
+                </h4>
+                <button style={{ 'transform': 'rotate(180deg)' }} onClick={this.handleSessionIncrement} id="session-increment" className="pBtn">
+                  V</button>
+              </div>
             </div>
           </div>
-          <div className="col-6">
-            <h4 id="session-label">
-              Session Length</h4>
-            <div className="row m-0">
-              <button onClick={this.handleSessionDecrement} id="session-decrement" className="col-5">
-                down</button>
-              <h4 id="session-length" className="col-2">
-                {session}
-              </h4>
-              <button onClick={this.handleSessionIncrement} id="session-increment" className="col-5">
-                up</button>
-            </div>
+          <div className="text-center mt-5">
+            <h4 id="timer-label">{this.state.label}</h4>
+            <h1 id="time-left">{minutes}:{seconds}</h1>
           </div>
+          <div className="text-center">
+            <button onClick={this.handleCount} id="start_stop" className="pBtnLower pBtnPlayPause">|| ></button>
+            <button onClick={this.reset} id="reset" className="pBtnLower pBtnReset">reset</button>
+          </div>
+          <p className="text-center mt-3 pb-4">
+            <button onClick={this.reset} className="pBtnLower pBtnExit"><Link className="pBtnLink" to="/">EXIT</Link></button>
+          </p>
         </div>
-        <div className="text-center mt-5">
-          <h4 id="timer-label">{this.state.label}</h4>
-          <h1 id="time-left">{minutes}:{seconds}</h1>
-        </div>
-        <div className="text-center">
-          <button onClick={this.handleCount} id="start_stop">play/pause</button>
-          <button onClick={this.reset} id="reset">reset</button>
-        </div>
-        <p className="text-center mt-3 pb-4">Designed and Coded by<br />
-          Emmanuel Pitcher
-            </p>
       </div>
     )
   }

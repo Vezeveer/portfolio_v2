@@ -1,0 +1,16 @@
+.navbar-custom-container {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+}
+
+.navbar-custom-container h6 {
+  display: inline-block;
+  margin: 20px;
+}
+
+.navbar-custom-container h6 a {
+  text-decoration: none;
+  color: #a9aec5;
+}
+/*# sourceMappingURL=styles.css.map */
