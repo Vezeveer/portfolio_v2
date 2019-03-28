@@ -11,3 +11,9 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px){
+  .navbar-custom-container{
+    display: none;
+  }
+}

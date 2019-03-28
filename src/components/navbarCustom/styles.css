@@ -13,4 +13,10 @@
   text-decoration: none;
   color: #a9aec5;
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar-custom-container {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

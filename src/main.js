@@ -12,7 +12,7 @@ import WordBeater from './components/projects/wordbeater'
 import NavbarCustom from './components/navbarCustom'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import debounce from 'lodash/debounce'
+
 
 class Temporary extends Component {
 
@@ -22,6 +22,7 @@ class Temporary extends Component {
         <main className="body-container">
           <div id="home"></div>
           <NavbarCustom />
+          {/* create better menu button */}
           <Header />
 
           <section>

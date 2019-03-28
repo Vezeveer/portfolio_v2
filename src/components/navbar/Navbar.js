@@ -6,8 +6,7 @@ function NavbarMain() {
   return (
     <div>
       <Navbar className="mainNav text-light" bg="pink" expand="lg">
-        <Navbar.Brand className="d-inline text-left text-light" href="#home">EP</Navbar.Brand>
-        <Navbar.Toggle className="d-inline text-left" aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle className="toggle-btn-custom d-inline text-left" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link className="txtNav" href="#home-dsk">Home</Nav.Link>

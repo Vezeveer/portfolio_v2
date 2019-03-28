@@ -10,12 +10,12 @@
   background: rgba(39, 4, 4, 0.664);
 }
 .mainNav{
-  background: rgba(99, 20, 20, 0.274) !important;
-  color: white !important;
+  color: rgb(226, 226, 226) !important;
   z-index: 49;
   display: none !important;
   position: fixed !important;
   width: 100%;
+  background: rgba(0, 0, 0, 0.199);
 }
 .nav-container{
   width: 100vw;
@@ -43,8 +43,11 @@
   text-align: right;
   height: 80px;
 }
+.toggle-btn-custom{
+  background: rgba(0, 0, 0, 0.247) !important;
+}
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 768px){
   .navlinks{
       display: none !important;
   }

@@ -13,12 +13,12 @@
 }
 
 .mainNav {
-  background: rgba(99, 20, 20, 0.274) !important;
-  color: white !important;
+  color: #e2e2e2 !important;
   z-index: 49;
   display: none !important;
   position: fixed !important;
   width: 100%;
+  background: rgba(0, 0, 0, 0.199);
 }
 
 .nav-container {
@@ -52,7 +52,11 @@
   height: 80px;
 }
 
-@media only screen and (max-width: 720px) {
+.toggle-btn-custom {
+  background: rgba(0, 0, 0, 0.247) !important;
+}
+
+@media only screen and (max-width: 768px) {
   .navlinks {
     display: none !important;
   }
