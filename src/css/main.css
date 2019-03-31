@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background: rgba(228, 228, 228, 0.11);
 }
 
 html body {
@@ -8,7 +9,6 @@ html body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
-  background: rgba(228, 228, 228, 0.11);
 }
 
 html body .body-container {

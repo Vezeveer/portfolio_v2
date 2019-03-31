@@ -10,11 +10,27 @@ import Drum606 from './components/projects/drum606'
 import RandomQuoteMachine from './components/projects/randomQuoteMachine'
 import WordBeater from './components/projects/wordbeater'
 import NavbarCustom from './components/navbarCustom'
+import ContactForm from './components/contactForm'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 
 class Temporary extends Component {
+
+  // SOME USEFUL CODE
+  // document.addEventListener('click', function (event) {
+
+  //   if (event.target.matches('.modal-open')) {
+  //     // Run your code to open a modal
+  //   }
+
+  //   if (event.target.matches('.close')) {
+  //     // Run your code to close a modal
+  //   }
+
+  // }, false);
+
+
 
   render() {
     return (
@@ -133,6 +149,7 @@ class Temporary extends Component {
             <h3 id="portfolio" className="text-center">Rough Projects</h3>
             <Portfolio />
           </div>
+          <ContactForm />
           <Footer />
         </main>
       </Router>

@@ -16,7 +16,7 @@ const Home = () => {
             <h4>And I am A Web Developer</h4>
           </div>
         </div>
-        <div className="h-bg">BG yo</div>
+        <div className="h-bg"></div>
       </header>
       <div className="illumin-lines">
         <div className="line-right"></div>
